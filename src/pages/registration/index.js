@@ -5,9 +5,10 @@ import { ImEye } from "react-icons/im";
 import { getAuth, createUserWithEmailAndPassword ,sendEmailVerification,updateProfile  } from "firebase/auth";
 import { Navigate } from 'react-router-dom';
 import { ColorRing } from 'react-loader-spinner';
-
+import { getDatabase, ref, set } from "firebase/database";
 const Registration = () => {
   const auth = getAuth();
+  const db = getDatabase();
    let navigate = useNavigate();
    let [email, setEmail] = useState();
    let [password, setPassword] = useState();
@@ -67,7 +68,7 @@ const Registration = () => {
       else if (!/^(?=.{8,})/.test(password)) {
         setPasserr("Password have atleast 6 charecter");
       }
-      if(email && password && fullName && setValidemil
+      else if(email && password && fullName && setValidemil
         && setValidpass){
           setLoading(true);
           createUserWithEmailAndPassword(auth, email, password)
@@ -77,14 +78,22 @@ const Registration = () => {
               photoURL:"images/avt.png",
             
             }).then(() => {
-              console.log(user);
               sendEmailVerification(auth.currentUser).then(() => {
                 setLoading(false);
                 setSuccess("Registration successful. Please verified your email address ")
-              });
-              setTimeout(()=>{
-                navigate("/login");
-              },2000);
+               
+              }).then(()=>{
+                set(ref(db, 'users/' + user.user.uid), {
+                  name: user.user.displayName,
+                  email: user.user.email,
+                  photoURL : user.user.photoURL
+                });
+              }).then(()=>{
+                setTimeout(()=>{
+                  navigate("/login");
+                },2000);
+              })
+           
             }).catch((error) => {
              console.log(error);
             });
@@ -173,7 +182,7 @@ const Registration = () => {
                 </p>
               )}
             </div>
-            {loading ?
+           {loading ?
              <div className="flex justify-center">
              <ColorRing
                      height="80"
@@ -226,13 +235,14 @@ const Registration = () => {
                   {success}
                 </p>
               )}
-            <p className="font-open font-regular	text-xs text-black mt-7 w-full text-center">
+            <p className="font-open font-regular	text-xs text-black mt-7 w-full text-left">
               Already have an account ?{" "}
               <Link to="/login" className="font-open font-bold text-[#EA6C00]">
                 {" "}
                 Sign In
               </Link>
             </p>
+           
           </div>
         </div>
       </div>

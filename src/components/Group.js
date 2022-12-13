@@ -12,7 +12,7 @@ const Group = () => {
                 <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
            </div>
            <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
            </div>
         </div>
         <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
@@ -22,7 +22,7 @@ const Group = () => {
                 <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
            </div>
            <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
            </div>
         </div>
         <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
@@ -32,7 +32,7 @@ const Group = () => {
                 <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
            </div>
            <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
            </div>
         </div>
         <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
@@ -42,24 +42,14 @@ const Group = () => {
                 <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
            </div>
            <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
            </div>
         </div>
         <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
               <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
            <div>
                <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
-                <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
-           </div>
-           <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
-           </div>
-        </div>
-        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
-              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
-           <div>
-               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
-                <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
+                <p className="font-nun font-normal text-white text-base ">Hi Guys, Wassup!</p>
            </div>
            <div>
              <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
@@ -72,6 +62,46 @@ const Group = () => {
                 <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
            </div>
            <div>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
+           </div>
+        </div>
+        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
+              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
+           <div>
+               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
+                <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
+           </div>
+           <div>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
+           </div>
+        </div>
+        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
+              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
+           <div>
+               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
+                <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
+           </div>
+           <div>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
+           </div>
+        </div>
+        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
+              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
+           <div>
+               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
+                <p className="font-nun font-normal text-white text-base ">Hi Guys, Wassup!</p>
+           </div>
+           <div>
+             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
+           </div>
+        </div>
+        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
+              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
+           <div>
+               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
+                <p className="font-nun font-normal text-white text-base ">Hi Guys, Wassup!</p>
+           </div>
+           <div>
              <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
            </div>
         </div>
@@ -82,37 +112,7 @@ const Group = () => {
                 <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
            </div>
            <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
-           </div>
-        </div>
-        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
-              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
-           <div>
-               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
-                <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
-           </div>
-           <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
-           </div>
-        </div>
-        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
-              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
-           <div>
-               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
-                <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
-           </div>
-           <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
-           </div>
-        </div>
-        <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
-              <img src="images/profile.png" className="w-[70px] h-[70px] rounded"/>
-           <div>
-               <h3 className="font-nun font-semibold text-xl ">Friends Reunion</h3>
-                <p className="font-nun font-normal text-base ">Hi Guys, Wassup!</p>
-           </div>
-           <div>
-             <button className="font-nun font-normal text-base bg-primary p-1.5 rounded">Join</button>
+             <button className="font-nun font-normal text-white text-base bg-primary p-1.5 rounded">Join</button>
            </div>
         </div>
         <div className="flex justify-between items-center border-b-2 border-solid border-zinc-300  pb-2.5 m-5" >
